@@ -1,4 +1,7 @@
+'use client'
+
 import type { FC, ButtonHTMLAttributes } from 'react'
+import { Button as CarbonButton } from '@carbon/react'
 
 export interface ButtonProps {
   /**
@@ -13,11 +16,7 @@ const Button: FC<ButtonProps & ButtonHTMLAttributes<HTMLButtonElement>> = ({
   secondary = false,
   ...props
 }) => {
-  return (
-    <button {...props}>
-      {children}
-    </button>
-  )
+  return <CarbonButton {...props}>{children}</CarbonButton>
 }
 
 export default Button
