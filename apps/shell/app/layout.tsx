@@ -1,4 +1,4 @@
-import { Navbar } from '@mfe/shared'
+import { Navbar } from '@mfe/ui'
 import './global.css'
 
 export const metadata = {

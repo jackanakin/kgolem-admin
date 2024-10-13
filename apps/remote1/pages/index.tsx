@@ -1,4 +1,4 @@
-import { Navbar } from '@mfe/shared'
+import { Navbar } from '@mfe/ui'
 import { Layout, Page, Text, Code, Link } from '@vercel/examples-ui'
 
 export default function Index() {

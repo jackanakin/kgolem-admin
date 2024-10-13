@@ -1,7 +1,7 @@
 import { Layout, Page, Text, Code, Link } from '@vercel/examples-ui'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
-import { Button, Navbar } from '@mfe/shared'
+import { Button, Navbar } from '@mfe/ui'
 
 type User = {
   name: string
