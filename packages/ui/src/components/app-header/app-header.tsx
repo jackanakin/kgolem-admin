@@ -1,6 +1,6 @@
 'use client'
 
-import { type FC, type ButtonHTMLAttributes, useState } from 'react'
+import { type FC, useState } from 'react'
 import {
   Header,
   HeaderGlobalAction,
@@ -8,16 +8,12 @@ import {
   HeaderName,
   HeaderPanel,
   Switcher,
-  SwitcherDivider,
   SwitcherItem,
 } from '@carbon/react'
 import { Switcher as SwitcherIcon } from '@carbon/icons-react'
 import { AppHeaderProps } from '../../interfaces/components/app-header.props'
-import Link from 'next/link'
 
-const AppHeader: FC<
-  AppHeaderProps & ButtonHTMLAttributes<HTMLButtonElement>
-> = ({ links }) => {
+const AppHeader: FC<AppHeaderProps> = ({ links }) => {
   const [expanded, setExpanded] = useState(false)
 
   const toggleExpanded = () => {
@@ -28,9 +24,7 @@ const AppHeader: FC<
 
   return (
     <Header aria-label="K-Golem">
-      <HeaderName href="#" prefix="K-Golem">
-        [Admin]
-      </HeaderName>
+      <HeaderName prefix="K-Golem">[Admin]</HeaderName>
       <HeaderGlobalBar>
         {/* <HeaderGlobalAction
           aria-label="Search"
